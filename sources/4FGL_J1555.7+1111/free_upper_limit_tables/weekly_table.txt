@@ -1,0 +1,3 @@
+timestamp, ts, flux_upper_limits, fit_tolerance, fit_convergence
+551966401, 0.02, 3.31e-07, 1e-08, 0
+561038401, 0.0, -1.0, 1e-08, 101

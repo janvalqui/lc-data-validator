@@ -1,0 +1,4 @@
+timestamp, ts, flux, flux_error, photon_index, photon_index_interval, fit_tolerance, fit_convergence
+253843201, 3.61, 9.08e-09, 6.25e-09, 2.54, 0, 1e-08, 0
+489715201, 1.49, 3.38e-09, 3.68e-09, 2.54, 0, 1e-08, 0
+505267201, 1.32, 5.38e-09, 4.83e-09, 2.54, 0, 1e-08, 0

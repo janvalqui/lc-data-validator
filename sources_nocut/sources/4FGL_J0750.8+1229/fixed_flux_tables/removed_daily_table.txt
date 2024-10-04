@@ -1,0 +1,5 @@
+timestamp, ts, flux, flux_error, photon_index, photon_index_interval, fit_tolerance, fit_convergence, reasons_for_removal
+286632001, 1.0, NaN, NaN, 2.52, 0, 1e-08, 0, missing_flux||missing_flux_error
+355060801, 1.0, NaN, NaN, 2.52, 0, 1e-08, 0, missing_flux||missing_flux_error
+383572801, 4.91, 3.34e-08, 3.13e-08, 2.52, 0, 1e-08, 0, outlier_in_relative_flux
+570456001, 1.0, NaN, NaN, 2.52, 0, 1e-08, 0, missing_flux||missing_flux_error

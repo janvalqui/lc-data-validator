@@ -1,0 +1,4 @@
+timestamp, ts, flux, flux_error, photon_index, photon_index_interval, fit_tolerance, fit_convergence, reasons_for_removal
+555595201, 1.21, 5.34e-07, 2e-09, 2.46, 0, 1e-08, 101, non_zero_quality||outlier_in_relative_flux
+564667201, 1.05, 2.53e-07, 4.83e-07, 2.46, 0, 1e-08, 102, non_zero_quality
+616680001, 13.58, 2.09e-05, 0, 2.46, 0, 1e-08, 0, zero_flux_error

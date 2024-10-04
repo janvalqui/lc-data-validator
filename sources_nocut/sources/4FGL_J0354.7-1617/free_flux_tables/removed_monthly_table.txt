@@ -1,0 +1,8 @@
+timestamp, ts, flux, flux_error, photon_index, photon_index_interval, fit_tolerance, fit_convergence, reasons_for_removal
+292723201, 2.44, 3.3e-08, 2.49e-08, 3.93, 5.19, 1e-08, 102, non_zero_quality
+295315201, 5.73, 3.06e-08, 1.65e-07, 8.69, 2.64, 1e-08, 102, non_zero_quality
+308275201, 1.39, 1.56e-08, 1.25e-08, 5.04, 5.83, 1e-08, 102, non_zero_quality
+411955201, 6.27, 5.23e-08, 2.45e-08, 3.9, 3.28, 1e-08, 102, non_zero_quality
+445651201, 1.0, NaN, NaN, NaN, NaN, 1e-08, 0, missing_flux||missing_flux_error
+551923201, 14.63, 3.79e-08, 1.73e-08, 3.23, 2.5, 1e-08, 102, non_zero_quality
+689299201, 2.73, 2.25e-08, 3.49e-07, 6.43, 3.82, 1e-08, 0, outlier_in_relative_flux

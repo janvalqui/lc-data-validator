@@ -34,6 +34,7 @@ These six parameters should be input in that specific order. Example:
 `python lcr_data_validator.py "4FGL J2359.2-3134" free weekly photon_index_interval lt 2.5`
 
 Some constraints:
+
 `SOURCE_NAME`: if the source name has spaces, like above, put it in "double quotes". It also accepts underscored names like 4FGL_J2359.2-3134, which does not need quotes.
 
 `FLUX_TYPE`: Accepted values: fixed, free, all. ("all" means this filter will be applied in both fixed and free tables)
@@ -52,15 +53,18 @@ Optional parameters:
 1) `-d` or `--directory`: The code assumes that all your sources' data is in ./sources . If that's not the case, you can specify the directory of the sources via `-d` . For example:
 
 `python lcr_data_validator.py "4FGL J2359.2-3134" free weekly photon_index_interval lt 2.5 -d /home/my_user/source_data`
+
 (this means that you have a folder `/home/my_user/source_data/4FGL_J2359.2-3134/` that contains the data for this source)
 
 2) `-r` or `--reset`: The code creates history files that help remember what has been already filtered. If you want to undo these, you can reset the history with this parameter.
 The data that was removed will return to the original table and the graphs will be reset as well.
 
 `python lcr_data_validator.py "4FGL J2359.2-3134" fixed daily -r`
+
 (this will only rease the history for fixed_flux and for the daily table for this source) (rememver that flux_type must go before cadence)
 
 `python lcr_data_validator.py "4FGL J2359.2-3134" -r`
+
 (this will erase all histories for this source)
 
 RESULTS:

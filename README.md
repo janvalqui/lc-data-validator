@@ -1,5 +1,6 @@
 # lc-data-validator
-Downloads and validates light curve data. Currently set to work with Fermi-LAT LCR data.
+Downloads and validates light curve data. Currently set to work with Fermi-LAT LCR data. See slides 17 and 18 at:
+https://drive.google.com/drive/folders/1EQETWQcRyXy8gwP3rj7Kq6SL9WS3_-Mm
 
 ### To download all of the LCR data do:
 `python lcr_import_data_by_source.py`

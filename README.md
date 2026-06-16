@@ -26,7 +26,47 @@ optional arguments:
 ```
 
 
+### To generate plots:
+```
+python lcr_plot_generator.py -h
+usage: lcr_plot_generator.py [-h] [-m {all,tables,outliers,fluxflux,correlation,sunmoon}]
+                             [-e DAILY WEEKLY MONTHLY] [-x DAILY WEEKLY MONTHLY]
+                             [--placeholder PLACEHOLDER] [--suffix SUFFIX] [-l]
+                             [sources [sources ...]]
+
+Process source data to generate plots, validate data, add sun and moon distances, or compare nearby
+source data
+
+positional arguments:
+  sources               Input source names (in quotes if the name has spaces) to run the selected method
+                        only for specific sources
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -m {all,tables,outliers,fluxflux,correlation,sunmoon}, --method {all,tables,outliers,fluxflux,correlation,sunmoon}
+                        Choose a method to run, or use "all" to run all of them (in the order listed).
+                        Default: "all"
+  -e DAILY WEEKLY MONTHLY, --free-dev DAILY WEEKLY MONTHLY
+                        For "tables" and "outliers" methods, add the amount of std deviations allowed
+                        for FREE_flux tables, for DAILY, WEEKLY and MONTHLY data (in that order) that
+                        will determine outliers. Default: 4(daily) 4(weekly) 5(monthly)
+  -x DAILY WEEKLY MONTHLY, --fixed-dev DAILY WEEKLY MONTHLY
+                        For "tables" and "outliers" methods, add the amount of std deviations allowed
+                        for FIXED_flux tables, for daily, weekly and monthly data (in that order) that
+                        will determine outliers. Default: 4(daily) 4(weekly) 5(monthly)
+  --placeholder PLACEHOLDER
+                        For the methods "tables" and "sunmoon", choose the value that will represent an
+                        "empty cell".Default: NaN
+  --suffix SUFFIX       Add suffix for the plots that will be created e.g. --suffix=test will create
+                        plots named "some_plot_test.png". Default: ""
+  -l, --list
+```
+
+
 ### To use the data filtering:
+
+Before compiling this code, first run at least:
+`python lcr_data_validator.py -m tables [SOURCE_NAME]`
 
 `python lcr_data_validator.py [SOURCE_NAME] [FLUX_TYPE] [CADENCE] [PARAMETER] [COMPARATOR] [VALUE]`
 
